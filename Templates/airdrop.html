@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<title>{{title}}</title>
+<div class="container"> 
+<h1> Batch Airdrop Check for Uniswap, Tornado & 1Inchs </h1>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<br>
+<br>
+
+<form action='/result' method="POST" >
+  <div class="form-group row">
+    <label for="erc20s" class="col-3 col-form-label">ERC20 Addressess</label> 
+    <div class="col-9">
+      <textarea id="erc20s" name="erc20s" cols="40" rows="10" class="form-control"></textarea>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-3 col-9">
+      <button name="submit" type="submit" class="btn btn-secondary">Submit</button>
+    </div>
+  </div>
+</form>
+
+</div>
+{% endblock %} 
